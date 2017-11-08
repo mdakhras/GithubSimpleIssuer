@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Comments";
+    var name =(string) ViewBag.issuename;
+    var id =(int)  ViewBag.id;
+}
+
+<h2>Issue <u>@name</u>  Comments</h2>
+
+<script>
+
+    GetIssueComments(@id);
+
+</script>
+
+<input type="hidden" name="issueid" id="issueid" value="@id" />
+<ul class="commentlist">
+
+
+
+
+
+</ul>
